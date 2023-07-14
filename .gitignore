@@ -1,0 +1,35 @@
+# Arquivos e pastas específicas
+.*
+!.gitignore
+!.env
+
+# Ignore __pycache__ directories
+__pycache__/
+
+# Pastas
+/.venv
+
+# Arquivos temporários
+*.swp
+*~
+
+# Logs
+/log
+*.log
+
+# Arquivos de ambiente
+.env
+
+# Dependências e pacotes
+/node_modules
+/bower_components
+/venv
+
+# Arquivos de compilação
+/build
+/dist
+
+# Arquivos de configuração IDE
+.idea
+.vscode
+
