@@ -3,15 +3,20 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Integrando HTML ao Flask</title>
+	<title>Lista de Empresas</title>
 </head>
 <body>
-<h2> Valuation - Kim Kataguiri & Guto Zacarias // CARTOR CAPITAL</h2>
+<h2 style="text-align: center;"> Valuation - Kim Kataguiri & Guto Zacarias // CARTOR CAPITAL</h2>
 <hr>
 <ol>
     {% for fruta in frutas %}
         <li>{{fruta}}</li>
     {% endfor %}
+    <form action="{{url_for('principal')}}" method="POST">
+        <label>Empresa</label>
+        <input type="text" name="fruta">
+        <button>Adicionar</button>
+    </form>
 </ol>
 </body>
 </html>
