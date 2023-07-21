@@ -27,3 +27,7 @@ def sobre():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+# utilizar o bootstrap para componentes visuais da aplicação
+# templates e diversos outros conteúdos, inclusive formulários
