@@ -2,14 +2,17 @@
 {% block conteudo %}
 <h2 style="text-align: center;"> Valuation - Kim Kataguiri & Guto Zacarias // CARTOR CAPITAL</h2>
 <hr>
-<ol>
+<ul class="list-group">
     {% for fruta in frutas %}
-        <li>{{fruta}}</li>
+        <li class="list-group-item">{{fruta}}</li>
     {% endfor %}
     <form action="{{url_for('principal')}}" method="POST">
-        <label>Empresa</label>
-        <input type="text" name="fruta">
-        <button>Adicionar</button>
+        <div class="form-group">
+            <label for="exemploEmpresa">Empresa</label>
+            <input class="form-control" id="exemploEmpresa" type="text" name="fruta" placeholder="Digite o nome de uma Cia.">
+        </div>
+
+        <button class="btn btn-success">Adicionar</button>
     </form>
-</ol>
+</ul>
 {% endblock conteudo %}
